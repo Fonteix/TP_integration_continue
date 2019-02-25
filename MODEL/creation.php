@@ -26,3 +26,7 @@
 	
 	$stmt->execute();
 ?>
+
+<script>
+	document.location= '../index.php';
+</script>
