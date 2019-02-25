@@ -18,15 +18,13 @@
 		$password = htmlspecialchars($_POST['password']);
 	}
 
-	include ('../bdd.php');
-
-
-	$stmt = $bdd->prepare("SELECT * FROM clients where cli_email = ?");
-		if ($stmt->execute(array($_GET['cli_email'])))
-		{
-	  		while ($row = $stmt->fetch()) {
-	    	print_r($row);
-	  	}
+	include('../bdd.php');
+	$email = 'bernard.campan@mondomaine.fr';
+	$reponse = $bdd->prepare("SELECT * FROM clients WHERE cli_email = ?");
+	$reponse->execute(array($_POST['username']));
+	while ($donnees = $reponse->fetch())
+	{
+		echo $donnees['cli_pass'];
 	}
 
 

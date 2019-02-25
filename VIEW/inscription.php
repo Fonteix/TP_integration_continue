@@ -8,6 +8,6 @@
       Email <input type="text" name="email"/> <br/>
       Date naissance <input type="text" name="dnai"/> <br/>
       Mot de passe <input type="text" name="password"/> <br/>
-      <br/><input type="button" action="submit" value="S'inscrire" href="index.php"/>
+      <br/><input type="submit" a value="S'inscrire" />
     </p>
   </form>
