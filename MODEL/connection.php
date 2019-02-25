@@ -19,14 +19,17 @@
 	}
 
 	include ('../bdd.php');
-	$reponse = $bdd->prepare('SELECT * FROM clients WHERE cli_email= ?');
-	$reponse->bind_param('s', $username);
-    $reponse->execute();
-    $result = $reponse->get_result();
-    while ($donnees = $result->fetch_assoc())
-    {
-        $bddpass = $donnees['pass'];
-    }
+
+
+	$stmt = $bdd->prepare("SELECT * FROM clients where cli_email = ?");
+		if ($stmt->execute(array($_GET['cli_email'])))
+		{
+	  		while ($row = $stmt->fetch()) {
+	    	print_r($row);
+	  	}
+	}
+
+
 
     if($bddpass == $password)
     {
