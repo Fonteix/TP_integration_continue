@@ -1,0 +1,16 @@
+html
+{
+	height: 100%;
+	width: 100%;
+}
+body{
+	height: 100%;
+	width: 100%;
+}
+
+a{
+	width: 20%;
+	height: 50px;
+	text-decoration: none;
+	color: black;
+}

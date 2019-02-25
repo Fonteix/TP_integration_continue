@@ -8,10 +8,11 @@
 <html lang="fr">
 <head>
 	<title>INTEGRATION CONTINUE</title>
+	<link rel="stylesheet" href="../PUBLIC/AAAAAAA.css" type="text/css"/>
 </head>
 <body>
 <h1>ACCUEIL</h1>
-<a href="inscription.php"></a>
-<a href="connexion.php"></a>
+<a href="inscription.php">INSCRIVEZ VOUS!!!!</a>
+<a href="connexion.php">CONNECTEZ VOUS!!!!</a>
 </body>
 </html>
