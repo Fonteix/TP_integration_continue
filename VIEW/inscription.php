@@ -1,5 +1,5 @@
 
-  <form action="creation.php" method="post">
+  <form action="../MODEL/creation.php" method="post">
     <p>
       Nom <input type="text" name="nom"/> <br/>
       Adresse <input type="text" name="adresse"/> <br/>
