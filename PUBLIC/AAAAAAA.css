@@ -6,11 +6,25 @@ html
 body{
 	height: 100%;
 	width: 100%;
+	font-family: 'Open Sans Condensed', sans-serif;
+	display: flex;
+	justify-content: space-around;
 }
 
 a{
 	width: 20%;
 	height: 50px;
 	text-decoration: none;
-	color: black;
+	color: white;
+}
+
+input
+{
+	margin-bottom: 10px;
+}
+
+div
+{
+	height: 100%;
+	background-color: #2A2A2A;
 }
