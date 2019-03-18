@@ -10,12 +10,14 @@
 	<title>INTEGRATION CONTINUE</title>
 	<link rel="stylesheet" href="../PUBLIC/AAAAAAA.css" type="text/css"/>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body style="background-color: #232323; color: white;">
 	<div style="width: 20%; position: absolute; left: 0px; padding: 3%;">
 <h1>ACCUEIL</h1>
 <a href="inscription.php">Inscription</a></br>
-<a href="connexion.php">Connection</a>
+<a href="connexion.php">Connection</a></br>
+<i class="material-icons"></i>
 
 <?php 
 if (isset($_SESSION['user']))
