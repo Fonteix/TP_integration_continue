@@ -5,6 +5,7 @@
 	$_SESSION['username'] = null;
 	$_SESSION['user'] = null;
 	$_SESSION['prm'] = 0;
+	$_SESSION['rechalb'] = null;
 
 
 	header('Location: VIEW/Acceuil.php');
