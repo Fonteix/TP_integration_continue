@@ -4,6 +4,7 @@
         header('Location: ../index.php');
 	
 	$bddpass = "null";
+	$bdduser = "null";
 	$password = "null";
 	$username = "null";
 
@@ -24,7 +25,10 @@
 	$reponse->execute(array($_POST['username']));
 	while ($donnees = $reponse->fetch())
 	{
-		echo $donnees['cli_pass'];
+		$bddpass = $donnees['cli_pass'];
+		$bdduser = $donnees['cli_nom'];
+		//echo $donnees['cli_nom'];
+		//echo $donnees['cli_pass'];
 	}
 
 
@@ -34,9 +38,14 @@
     	$_SESSION['password_error'] = 0;
 		if (!(empty($_POST)))
 		{
-			$_SESSION['password'] = htmlspecialchars($_POST['password']);
-			$_SESSION['user'] = htmlspecialchars($_POST['username']);
+			$_SESSION['password'] = $password;
+			$_SESSION['username'] = $bdduser;
+			$_SESSION['user'] = $username;
+			echo $_SESSION['user'];
 		}
     }
-
 ?>
+
+<script type="text/javascript">
+	document.location= '../VIEW/Acceuil.php';
+</script>
